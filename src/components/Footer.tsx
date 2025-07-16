@@ -1,4 +1,5 @@
 import { Heart, Mail, MessageCircle, Package } from "lucide-react";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
@@ -44,10 +45,13 @@ const Footer = () => {
                 <Mail className="w-4 h-4" />
                 orders@kidscart.com
               </a>
-              <a href="#" className="flex items-center gap-2 text-sm text-muted-foreground hover:text-primary transition-colors">
+              <Link to="/contact" className="flex items-center gap-2 text-sm text-muted-foreground hover:text-primary transition-colors">
                 <MessageCircle className="w-4 h-4" />
-                24/7 Customer Support
-              </a>
+                Contact Us
+              </Link>
+              <Link to="/privacy" className="text-sm text-muted-foreground hover:text-primary transition-colors block">
+                Privacy Policy
+              </Link>
             </div>
           </div>
         </div>
